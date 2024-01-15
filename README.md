@@ -18,14 +18,16 @@ Before starting, make sure you have the following installed on your machine:
 
 After cloning the repository, run the following command in the project's root directory to install the required dependencies:
 
-bash
-Copy code
+```bash
 yarn install
+```
+
 Once the installation is complete, you can start the development server by running:
 
-bash
-Copy code
+```bash
 yarn dev
+```
+
 The app will be accessible at http://localhost:3000.
 
 ## Features {#features}
