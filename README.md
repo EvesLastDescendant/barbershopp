@@ -47,11 +47,9 @@ Other dependencies:
 
 - [FontAwesome] (<https://fontawesome.com/docs/web/use-with/react/>)
 
-- [React-Bootstrap Bootstrap] (<https://react-bootstrap.netlify.app/docs/getting-started/introduction/>)
+- [React-Bootstrap&Bootstrap] (<https://react-bootstrap.netlify.app/docs/getting-started/introduction/>)
 
-- [React-splidejs] (<https://splidejs.com/integration/react-splide/>)
-
-- [React-animejs] (<https://github.com/plus1tv/react-anime>)
+- [Animejs] (<https://animejs.com/documentation>)
 
 - [Axios] (<https://axios-http.com/docs/intro>)
 
