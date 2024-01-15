@@ -53,7 +53,7 @@ Other dependencies:
 
 - [Axios] (<https://axios-http.com/docs/intro>)
 
-as the app development goes on, dependencies needed will be added
+as the app development goes on, dependencies needed will be listed above.
 
 ### Features
 
