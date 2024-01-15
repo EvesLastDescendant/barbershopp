@@ -6,10 +6,10 @@ Welcome to the Online Barbershop Web App! This app was built using Vite and Reac
 
 - [Installation](#installation)
 - [Features](#features)
-- [Contributing](#collabs)
+- [Contributing](#contributing)
 - [License](#license)
 
-## Installation{#installation}
+## Installation
 
 Before starting, make sure you have the following installed on your machine:
 
@@ -43,7 +43,7 @@ yarn dev
 
 The app will be accessible at http://localhost:3000.
 
-## Features{# features}
+## Features
 
 Responsive Design: The web app is designed to provide an optimal experience on all devices.
 Secure Authentication: Users can create accounts and securely log in.
@@ -51,7 +51,7 @@ Booking Appointments: Users can easily book appointments with their preferred ba
 Instant Notifications: Users receive instant notifications about their bookings.
 User-Friendly Interface: The web app is easy to navigate and use.
 
-## Contributing{# collabs}
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -61,6 +61,6 @@ Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
-## License{# license}
+## License
 
 Distributed under the MIT License. See LICENSE for more information.
