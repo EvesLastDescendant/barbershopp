@@ -43,17 +43,19 @@ yarn dev
 
 The app will be accessible at <http://localhost:3000>.
 
-Other dependencies needed will be added subsequently:
+Other dependencies:
 
-- FontAwesome
+- [FontAwesome] (<https://fontawesome.com/docs/web/use-with/react/>)
 
-- React-Bootstrap Bootstrap
+- [React-Bootstrap Bootstrap] (<https://react-bootstrap.netlify.app/docs/getting-started/introduction/>)
 
-- React-splidejs
+- [React-splidejs] (<https://splidejs.com/integration/react-splide/>)
 
-- React-animejs
+- [React-animejs] (<https://github.com/plus1tv/react-anime>)
 
-- Axion
+- [Axios] (<https://axios-http.com/docs/intro>)
+
+as the app development goes on, dependencies needed will be added
 
 ## Features
 
