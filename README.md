@@ -43,6 +43,18 @@ yarn dev
 
 The app will be accessible at <http://localhost:3000>.
 
+Other dependencies needed will be added subsequently:
+
+- FontAwesome
+
+- React-Bootstrap Bootstrap
+
+- React-splidejs
+
+- React-animejs
+
+- Axion
+
 ## Features
 
 1. Responsive Design: The web app is designed to provide an optimal experience on all devices.
