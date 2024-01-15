@@ -4,10 +4,10 @@ Welcome to the Online Barbershop Web App! This app was built using Vite and Reac
 
 ## Table of Contents
 
-- `[Installation](#installation)`
-- `[Features](#features)`
-- `[Contributing](#collabs)`
-- `[License](#license)`
+- [Installation](#installation)
+- [Features](#features)
+- [Contributing](#collabs)
+- [License](#license)
 
 ## Installation{#installation}
 
