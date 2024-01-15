@@ -9,7 +9,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+### Installation
 
 Before starting, make sure you have the following installed on your machine:
 
@@ -57,7 +57,7 @@ Other dependencies:
 
 as the app development goes on, dependencies needed will be added
 
-## Features
+### Features
 
 1. Responsive Design: The web app is designed to provide an optimal experience on all devices.
 
@@ -69,9 +69,9 @@ as the app development goes on, dependencies needed will be added
 
 5. User-Friendly Interface: The web app is easy to navigate and use.
 
-## Contributing
+### Contributing
 
-### Fork the Project
+#### Fork the Project
 
 1. Create your Feature Branch
 
@@ -93,6 +93,6 @@ git push origin feature/AmazingFeature
 
 4. Open a Pull Request
 
-## License
+### License
 
 Distributed under the MIT License. See LICENSE for more information.
