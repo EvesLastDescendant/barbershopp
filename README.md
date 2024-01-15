@@ -1,8 +1,8 @@
-# Online Barbershop Web App
+# Online Barbershop Web App 😎👨‍💻👩‍💻
 
-Welcome to the Online Barbershop Web App! This app was built using Vite and React, offering a sleek and user-friendly experience.
+🫡Welcome to the Online Barbershop Web App! This app was built using Vite and React, offering a sleek and user-friendly experience.
 
-## Table of Contents
+## Table of Contents🧾
 
 - [Installation](#installation)
 - [Features](#features)
