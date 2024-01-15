@@ -41,25 +41,43 @@ or
 yarn dev
 ```
 
-The app will be accessible at http://localhost:3000.
+The app will be accessible at <http://localhost:3000>.
 
 ## Features
 
-Responsive Design: The web app is designed to provide an optimal experience on all devices.
-Secure Authentication: Users can create accounts and securely log in.
-Booking Appointments: Users can easily book appointments with their preferred barber.
-Instant Notifications: Users receive instant notifications about their bookings.
-User-Friendly Interface: The web app is easy to navigate and use.
+1. Responsive Design: The web app is designed to provide an optimal experience on all devices.
+
+2. Secure Authentication: Users can create accounts and securely log in.
+
+3. Booking Appointments: Users can easily book appointments with their preferred barber.
+
+4. Instant Notifications: Users receive instant notifications about their bookings.
+
+5. User-Friendly Interface: The web app is easy to navigate and use.
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+### Fork the Project
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+1. Create your Feature Branch
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+2. Commit your Changes
+
+```bash
+git commit -m 'Add some AmazingFeature
+```
+
+3. Push to the Branch
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+4. Open a Pull Request
 
 ## License
 
