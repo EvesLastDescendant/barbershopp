@@ -6,7 +6,7 @@ Welcome to the Online Barbershop Web App! This app was built using Vite and Reac
 
 - [Installation](#installation)
 - [Features](#features)
-- [Collaboration] (#collab)
+- [Contributing](#collabs)
 - [License](#license)
 
 ## Installation {#installation}
