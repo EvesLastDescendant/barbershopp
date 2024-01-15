@@ -14,15 +14,28 @@ Welcome to the Online Barbershop Web App! This app was built using Vite and Reac
 Before starting, make sure you have the following installed on your machine:
 
 - [Node.js] (<https://nodejs.org/en/>)
+or
 - [Yarn] (<https://yarnpkg.com/>)
 
 After cloning the repository, run the following command in the project's root directory to install the required dependencies:
+
+```bash
+npm install
+```
+
+or
 
 ```bash
 yarn install
 ```
 
 Once the installation is complete, you can start the development server by running:
+
+```bash
+npm run dev
+```
+
+or
 
 ```bash
 yarn dev
