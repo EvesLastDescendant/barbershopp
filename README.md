@@ -82,13 +82,13 @@ Some extensions needed :
 
 #### Fork the Project
 
-Feature branches will be named alphabeticall; there're two branches (main and a-branch), so the next branch will be "b-branch" and so on.
-
 1. Create your Feature Branch. 
 
 ```bash
 git checkout -b [newbranch]
 ```
+
+Feature branches will be named alphabeticall; there're two branches (main and a-branch), so the next branch will be "b-branch" and so on.
 
 2. Commit your Changes
 
