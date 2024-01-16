@@ -41,7 +41,7 @@ or
 yarn dev
 ```
 
-The app will be accessible at <http://localhost:3000>.
+The app will be accessible at <http://localhost:3000>-<https://localhost:5173>.
 
 Other dependencies:
 
