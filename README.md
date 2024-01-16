@@ -7,6 +7,7 @@
 - [Installation](#installation)
 - [Features](#features)
 - [Contributing](#contributing)
+- [DevOps](#devops)
 - [License](#license)
 
 ### Installation
@@ -67,6 +68,16 @@ as the app development goes on, dependencies needed will be listed above.
 
 5. User-Friendly Interface: The web app is easy to navigate and use.
 
+### DevOps 💻🔐
+
+Environment to be used for live preview will be Chrome.
+
+Some extensions needed :
+
+1. React Developer Tools / Viewport Resizer
+
+2. Mobile Simulator
+
 ### Contributing
 
 #### Fork the Project
@@ -94,3 +105,5 @@ git push origin feature/AmazingFeature
 ### License
 
 Distributed under the MIT License. See LICENSE for more information.
+
+### G00DLUCK💪😤
