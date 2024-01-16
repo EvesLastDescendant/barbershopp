@@ -68,7 +68,7 @@ as the app development goes on, dependencies needed will be listed above.
 
 5. User-Friendly Interface: The web app is easy to navigate and use.
 
-### DevOps 💻🔐
+### DevOps
 
 Environment to be used for live preview will be Chrome.
 
@@ -82,10 +82,12 @@ Some extensions needed :
 
 #### Fork the Project
 
-1. Create your Feature Branch
+Feature branches will be named alphabeticall; there're two branches (main and a-branch), so the next branch will be "b-branch" and so on.
+
+1. Create your Feature Branch. 
 
 ```bash
-git checkout -b feature/AmazingFeature
+git checkout -b [newbranch]
 ```
 
 2. Commit your Changes
@@ -97,7 +99,7 @@ git commit -m 'Add some AmazingFeature'
 3. Push to the Branch
 
 ```bash
-git push origin feature/AmazingFeature
+git push origin [newbranch]
 ```
 
 4. Open a Pull Request
