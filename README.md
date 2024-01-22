@@ -1,6 +1,6 @@
 # Online Barbershop Web App 😎👨‍💻👩‍💻
 
-🫡Welcome to the Online Barbershop Web App! This app was built using Vite and React, offering a sleek and user-friendly experience.
+🫡Welcome to the Online Barbershop Web App! This app was built using Vite and React, React-Router offering a sleek and user-friendly experience.
 
 ## Table of Contents🧾
 
@@ -44,7 +44,9 @@ yarn dev
 
 The app will be accessible at <http://localhost:3000>-<https://localhost:5173>.
 
-Other dependencies:
+dependencies:
+
+- [React-Router] (<https://reactrouter.com/en/main/start/tutorial>)
 
 - [FontAwesome] (<https://fontawesome.com/docs/web/use-with/react/>)
 
@@ -102,7 +104,27 @@ git commit -m 'Add some AmazingFeature'
 git push origin [newbranch]
 ```
 
-4. Open a Pull Request
+4. Merge with root branch
+
+change branch to root branch
+
+```bash
+git checkout master/main
+```
+
+merge
+
+```bash
+git merge [newbranch]
+```
+
+5. Open a Pull Request
+
+To get new updates:
+
+```bash
+git pull
+```
 
 ### License
 
