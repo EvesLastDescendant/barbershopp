@@ -104,7 +104,21 @@ git commit -m 'Add some AmazingFeature'
 git push origin [newbranch]
 ```
 
-4. Open a Pull Request
+4. Merge with root branch
+
+change branch to root branch
+
+```bash
+git checkout master/main
+```
+
+merge
+
+```bash
+git merge [newbranch]
+```
+
+5. Open a Pull Request
 
 To get new updates:
 
