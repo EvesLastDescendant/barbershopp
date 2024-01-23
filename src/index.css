@@ -3,4 +3,5 @@
 
 *, body {
     user-select: none;
+    background-color: rgb(241, 239, 236);
 }

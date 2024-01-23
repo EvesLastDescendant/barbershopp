@@ -1,0 +1,28 @@
+.link, .link-active {
+    font-size: clamp(10px, 12px, 18px);
+    text-underline-offset: 0.5rem;
+    letter-spacing: 0.5ch;
+}
+
+.link {
+    color: #929092;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-active {
+    color: #444;
+}
+
+.link:hover{
+    color: #444;
+}
+
+.footer-link {
+    color: #444;
+    text-underline-offset: 0.4rem;
+    transition: color 0.2s ease-in;
+}
+
+.footer-link:hover {
+    color: #929092;
+}
