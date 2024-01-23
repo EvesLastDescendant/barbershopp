@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Container } from "react-bootstrap"
+import { Container} from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { fontsizes } from './../utils/fontsize';
+import { fontsizes } from './../utils/fontsize'
 
 function Home() {
     const [isHover, setIsHover] = useState(false)
@@ -10,7 +10,8 @@ function Home() {
         headertext: {
             fontFamily: "'Cormorant', serif",
             fontSize: `clamp(${fontsizes.lg} * 2, 8vw, ${fontsizes["3xl"]} * 2)`,
-            fontWeight: 600
+            fontWeight: 600,
+            backgroundImage: 'url("../assets/Barber+Pole.jpg")'
         },
         subtext: {
             fontFamily: "'Cormorant', serif",
@@ -26,7 +27,8 @@ function Home() {
             fontFamily: "'Poppins', sans-serif"
         },
         timestyle: {
-            fontFamily: "'Poppins', sans-serif"
+            fontFamily: "'Poppins', sans-serif",
+            fontWeight: 200
         },
         buttonStyle: {
             fontFamily: "'Poppins', sans-serif",
@@ -42,8 +44,8 @@ function Home() {
     return (
         <>
             <Container fluid className="text-center">
-                <Container>
-                    <p style={styles.headertext}>Crisp. Clean. <br />Classic.</p>
+                <Container  style={styles.headertext}>
+                    <p>Crisp. Clean. <br />Classic.</p>
                 </Container>
                 <Container style={{minHeight: '10', height: 250, maxHeight: 300}}></Container>
                 <Container>
@@ -57,18 +59,19 @@ function Home() {
                         <Link to='' style={styles.tostory} className=" text-warning">Read our story.</Link>
                     </p>
                 </Container>
+                <Container style={{minHeight: '10', height: 250, maxHeight: 300}}></Container>
                 <Container>
-                    <div><h1 style={styles.headertext}>Appointment Hours</h1></div>
+                    <div className="mb-5"><h1 style={styles.headertext}>Appointment Hours</h1></div>
                     <p style={styles.timestyle}>Tuesday-Friday 9:00am-7:00pm</p>
                     <p style={styles.timestyle}>Saturday 9:00am-1:00pm</p>
-                    <div>
+                    <div className="mt-5">
                         <button 
                             type="button" 
                             style={styles.buttonStyle} 
                             onMouseEnter={() => setIsHover(true)}
                             onMouseLeave={() => setIsHover(false)}
                         >
-                            <span>SCHEDULE APPOINTMENT</span>
+                            <span style={{backgroundColor: 'transparent', letterSpacing: 2}}>SCHEDULE APPOINTMENT</span>
                         </button>
                     </div>
                 </Container>

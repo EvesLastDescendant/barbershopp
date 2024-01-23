@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 
 const navigationitems = [
     {title: 'HOMEPAGE', to: ''}, 
-    {title: 'OUR STORY', to: 'about'}, 
-    {title: 'FIND US', to: 'contact'}
+    {title: 'FIND US', to: 'contact'},
+    {title: 'OUR STORY', to: 'about'} 
 ]
 
 function NavBar() {
@@ -17,16 +17,11 @@ function NavBar() {
     const styles = {
         button: {
             border: 'none',
-            backgroundColor: '#fff'
+            backgroundColor: 'transparent'
         },
         brandtext: {
             fontFamily: "'Cormorant', serif",
             fontSize: `clamp(${fontsizes.sm}, ${fontsizes["2xl"]}, ${fontsizes["3xl"]} * 2)`
-        },
-        navitems: {
-            color: '#b1b1b1',
-            fontSize: `clamp(${fontsizes.sm}, ${fontsizes.md}, ${fontsizes.lg})`,
-            textDecoration: 'none',
         }
     }
 
@@ -39,19 +34,19 @@ function NavBar() {
                 <Container fluid>
                     <NavbarToggle aria-controls="offcanvas-expand"/>
                     <NavbarBrand href="#"><h2 style={styles.brandtext}>Brand Name</h2></NavbarBrand>
-                    <NavbarOffcanvas id="offcanvas-expand" placement="start" aria-labelldby="offcanvaslabel-expand">
+                    <NavbarOffcanvas id="offcanvas-expand" placement="start" aria-labelldby="offcanvaslabel-expand" fluid>
                         <OffcanvasHeader closeButton></OffcanvasHeader>
                         <OffcanvasBody className="w-75 mx-auto">
                             <Nav className="justify-content-start flex-grow-1">
                                 {navigationitems.map((item) => (
-                                        <NavLink 
-                                            key={item.title} 
+                                        <div key={item.title}>
+                                            <NavLink
                                             to={`/${item.to}`} 
-                                            className="ms-5 mt-1"
-                                            style={styles.navitems}
-                                        >
-                                            {item.title}
-                                        </NavLink>
+                                            className={({isActive}) => (isActive ? 'text-decoration-underline ms-5 mt-1 link-active' : 'text-decoration-none ms-5 mt-1 link')}
+                                            >
+                                                {item.title}
+                                            </NavLink>
+                                        </div>
                                 ))}
                             </Nav>
                         </OffcanvasBody>

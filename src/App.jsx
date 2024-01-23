@@ -6,6 +6,7 @@ import PageLayout from './components/layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Error from './error'
+import Contact from './routes/contact'
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       { 
         index: true, 
         element: <Home /> 
+      },
+      {
+        path: "contact",
+        element: <Contact />
       },
       {
         path: "about",
