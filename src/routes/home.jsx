@@ -1,85 +1,73 @@
-import { useState } from "react"
-import { Container} from "react-bootstrap"
+import { Container } from "react-bootstrap"
+import NavBar from "../components/navigationbar"
+import { fontsizes } from "../utils/fontsize"
 import { Link } from "react-router-dom"
-import { fontsizes } from './../utils/fontsize'
+import { useState } from "react"
 
 function Home() {
-    const [isHover, setIsHover] = useState(false)
 
-    const styles = {
-        headertext: {
-            fontFamily: "'Cormorant', serif",
-            fontSize: `clamp(${fontsizes.lg} * 2, 8vw, ${fontsizes["3xl"]} * 2)`,
-            fontWeight: 600,
-            backgroundImage: 'url("../assets/Barber+Pole.jpg")'
-        },
-        subtext: {
-            fontFamily: "'Cormorant', serif",
-            fontSize: `clamp(${fontsizes.xs}, ${fontsizes.xl}, ${fontsizes["2xl"]})`,
-            fontWeight: 'bold'
-        },
-        storytext: {
-            fontFamily: "'Poppins', sans-serif",
-            fontWeight: 100,
-            lineHeight: fontsizes["2xl"]
-        },
-        tostory: {
-            fontFamily: "'Poppins', sans-serif"
-        },
-        timestyle: {
-            fontFamily: "'Poppins', sans-serif",
-            fontWeight: 200
-        },
-        buttonStyle: {
-            fontFamily: "'Poppins', sans-serif",
-            fontWeight: 200,
-            border: 'none',
-            backgroundColor: isHover ? '#444' : '#000',
-            color: '#D3D3D3',
-            padding: '1.3rem 3rem',
-            transition: 'backgroundColor 0.5s ease-in',
-        }
-    }
+    const [isHover, setIsHover] =useState(false)
 
     return (
         <>
-            <Container fluid className="text-center">
-                <Container  style={styles.headertext}>
-                    <p>Crisp. Clean. <br />Classic.</p>
+            <div className="for-navbar">
+                <NavBar />
+                <Container fluid style={{display: 'grid', placeItems: 'center', height: '80vh'}}>
+                    <h1 
+                        style={{
+                            fontSize: `clamp(${fontsizes.lg} * 3.5, 8vw, ${fontsizes["3xl"]} * 2)`,
+                            fontWeight: 600,
+                            color: '#fff',
+                            textAlign: 'center',
+                            fontFamily: "'Cormorant', serif"
+                        }}>Clean.Crisp. <br/> Classy.</h1>
                 </Container>
-                <Container style={{minHeight: '10', height: 250, maxHeight: 300}}></Container>
-                <Container>
-                    <p className="m-auto d-flex flex-column text-start w-75">
-                        <span style={styles.subtext}>
-                            The ultimate relaxed grooming experience for men. Clean cuts, sharp lines, and good times.
-                        </span><br />
-                        <span style={styles.storytext}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus rem aperiam. Tenetur sed pariatur possimus eum repellat tempore, et nobis? At voluptatibus odit!
-                        </span><br />
-                        <Link to='' style={styles.tostory} className=" text-warning">Read our story.</Link>
-                    </p>
-                </Container>
-                <Container style={{minHeight: '10', height: 250, maxHeight: 300}}></Container>
-                <Container>
-                    <div className="mb-5"><h1 style={styles.headertext}>Appointment Hours</h1></div>
-                    <p style={styles.timestyle}>Tuesday-Friday 9:00am-7:00pm</p>
-                    <p style={styles.timestyle}>Saturday 9:00am-1:00pm</p>
-                    <div className="mt-5">
-                        <button 
-                            type="button" 
-                            style={styles.buttonStyle} 
-                            onMouseEnter={() => setIsHover(true)}
-                            onMouseLeave={() => setIsHover(false)}
-                        >
-                            <span style={{backgroundColor: 'transparent', letterSpacing: 2}}>SCHEDULE APPOINTMENT</span>
-                        </button>
-                    </div>
+            </div>
+            <Container>
+                <div style={{minHeight: 10, height: 150}}></div>
+                <div className="div">
+                    <p style={{fontFamily: "'Cormorant', serif", fontWeight: 'bold'}}>The ultimate relaxed grooming experience for men. Clean cuts, sharp lines, and good times.</p>
+                    <p style={{fontFamily: "'Poppins', sans-serif", fontWeight: 100, lineHeight: fontsizes["2xl"]}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus perspiciatis fugit facere maiores aperiam quod sequi, quibusdam consequatur fugiat, vel deleniti dolore cum, debitis sit quas. Odio, ea! Id, soluta?</p>
+                    <Link to={'/about'} style={{fontFamily: "'Poppins', sans-serif"}} className="text-warning" >Read more about us</Link>
+                </div>
+            </Container>
+            <Container>
+                <div style={{minHeight: 10, height: 150}}></div>
+                <Container className="text-center">
+                    <h1
+                        style={{
+                            fontSize: `clamp(${fontsizes.lg} * 3.5, 8vw, ${fontsizes["3xl"]} * 2)`,
+                            fontWeight: 600,
+                            fontFamily: "'Cormorant', serif",
+                            color: '#000',
+                            marginBottom: '50px'
+                        }}
+                    >
+                        Appointment Hours
+                    </h1>
+                    <p>Weekdays: Tuesday-Friday 900am-7:00pm</p>
+                    <p className="mb-5">Weekends: Saturday 9:00am-1:00pm</p>
+                    <Link to={'/appointment'} style={{
+                        textDecoration: 'none',
+                        borderRadius: 5,
+                        letterSpacing: 2,
+                        width: '50%',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontWeight: 200,
+                        backgroundColor: isHover ? '#444' : '#000',
+                        border: 'none',
+                        color: '#fff',
+                        padding: '1rem 1.5rem',
+                        transition: 'backgroundColor 0.5s ease-in'
+                    }} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+                        SCHEDULE AN APPOINTMENT
+                    </Link>
                 </Container>
             </Container>
+            <div style={{minHeight: 10, height: 150}}></div>
+                
         </>
     )
 }
-
-
 
 export default Home
