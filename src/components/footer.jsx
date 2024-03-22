@@ -1,64 +1,54 @@
-import { Container} from "react-bootstrap"
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Footer() {
-
-    return(
+    return (
         <>
-            <Container fluid style={{textAlign: 'center', fontFamily: "'Poppins', sans-serif"}}>
-                <p style={{fontWeight: 200}}>(xxx) xxx-xxxx {`//`} info@examplebarbers.com</p>
-                <div className="d-flex justify-content-center align-items-center mt-5">
+            <div>
+                <Container style={{textAlign: 'center', fontFamily: '"Poppins", sans-serif'}} fluid>
                     <div>
-                        <Link 
-                            to='' 
-                            target="_blank"
-                            className="mx-2"
-                        >
-                            <FontAwesomeIcon icon={faFacebookF} size="xl" className="footer-link" />
-                        </Link>
+                        <p style={{fontWeight: 200}}>(xxx)xxx-xxxx // info@example.com</p>
                     </div>
-                    <div className="mx-2">
-                        <Link 
-                            to=''
-                            target="_blank"
-                            className="mx-2"
-                        >
-                            <FontAwesomeIcon icon={faInstagram} size="xl" className="footer-link" />
-                        </Link>
+                    <Container fluid>
+                        <Row>
+                            <Col md={{span: 1, offset: 5}}>
+                                <Link to={''} target="_blank">
+                                    <FontAwesomeIcon icon={faFacebookF} size="xl" className=""/>
+                                </Link>
+                            </Col>
+                            <Col md={{span: 1, offset: 0}}>
+                                <Link to={''} target="_blank">
+                                    <FontAwesomeIcon icon={faInstagram}size="xl" className=""/>
+                                </Link>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container fluid>
+                        <Row style={{fontSize: 12, fontWeight: 600}}>
+                            <Col md={{span: 2, offset: 4}}>
+                                <Link to={'/about'} className="text-decoration-none">
+                                    OUR STORY
+                                </Link>
+                            </Col>
+                            <Col md={{span: 2, offset: 0}}>
+                                <Link to={'/contact'} className="text-decoration-none">
+                                    FIND US
+                                </Link>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <div>
+                        <p>
+                        Developed by     
+                            <a href="" target="_blank" rel="noopener noreferrer">NetChunin</a>
+                        </p>
                     </div>
-                </div>
-                <div className="d-flex justify-content-center align-items-center mt-5">
-                    <div className="mx-2" style={{fontSize: 13, fontWeight: 600}}>
-                        <Link to='' className="text-decoration-none footer-link">
-                            <div>
-                                OUR STORY
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="mx-2" style={{fontSize: 13, fontWeight: 600}}>
-                        <Link to='' className="text-decoration-none footer-link">
-                            <div>
-                                FIND US
-                            </div>
-                        </Link>                        
-                    </div>
-                </div>
-                <p className="mt-4" style={{fontWeight: 200}}>
-                    Developed by <a 
-                        href="https://cloudhive-rr.netlify.app" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="footer-link"
-                        >
-                            NetChunin
-                    </a>
-                </p>
-            </Container>
+                </Container>
+            </div>
         </>
     )
 }
-
 
 export default Footer
