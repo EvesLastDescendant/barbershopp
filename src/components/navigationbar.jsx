@@ -1,85 +1,42 @@
-import { faSearch } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useEffect, useState } from "react"
-import { CloseButton, Container, Form, FormControl, Modal, ModalBody, Nav, Navbar, NavbarBrand, NavbarOffcanvas, NavbarToggle, OffcanvasBody, OffcanvasHeader} from "react-bootstrap"
+import { Container, Nav, Navbar, NavbarBrand, NavbarOffcanvas, NavbarToggle, OffcanvasBody, OffcanvasHeader } from "react-bootstrap"
 import { fontsizes } from './../utils/fontsize';
 import { NavLink } from "react-router-dom";
 
 const navigationitems = [
-    {title: 'HOMEPAGE', to: ''}, 
+    {title: 'HOME', to: ''},
     {title: 'FIND US', to: 'contact'},
-    {title: 'OUR STORY', to: 'about'} 
+    {title: 'OUR STORY', to: 'our story'}
 ]
 
 function NavBar() {
-    const [show, setShow] = useState(false)
 
-    const styles = {
-        button: {
-            border: 'none',
-            backgroundColor: 'transparent'
-        },
-        brandtext: {
-            fontFamily: "'Cormorant', serif",
-            fontSize: `clamp(${fontsizes.sm}, ${fontsizes["2xl"]}, ${fontsizes["3xl"]} * 2)`
-        }
-    }
 
-    useEffect(() => {
-
-    }, [])
-    return(
+    return (
         <>
-            <Navbar expand="sm" className="pt-5">
-                <Container fluid>
-                    <NavbarToggle aria-controls="offcanvas-expand"/>
-                    <NavbarBrand href="#"><h2 style={styles.brandtext}>Brand Name</h2></NavbarBrand>
-                    <NavbarOffcanvas id="offcanvas-expand" placement="start" aria-labelldby="offcanvaslabel-expand" fluid>
+            <Container fluid className="pt-4 px-3 ">
+                <Navbar expand="sm">
+                    <NavbarToggle aria-controls="offcanvas-expand" />
+                    <NavbarBrand href="#">
+                        <h2 style={{color: '#fff',fontFamily: "'Cormorant', serif", fontSize: `clamp(${fontsizes.sm}, ${fontsizes["2xl"]}, ${fontsizes["xl"]} * 2)`}}>BRAND NAME</h2>
+                    </NavbarBrand>
+                    <NavbarOffcanvas style={{backgroundColor: '#e4e4e4'}} id="offcanvas-expand" placement="bottom" aria-labelledby="offcanvaslabel-expand">
                         <OffcanvasHeader closeButton></OffcanvasHeader>
-                        <OffcanvasBody className="w-75 mx-auto">
-                            <Nav className="justify-content-start flex-grow-1">
+                        <OffcanvasBody>
+                            <Nav className="justify-content-end flex-grow-1">
                                 {navigationitems.map((item) => (
-                                        <div key={item.title}>
-                                            <NavLink
-                                            to={`/${item.to}`} 
-                                            className={({isActive}) => (isActive ? 'text-decoration-underline ms-5 mt-1 link-active' : 'text-decoration-none ms-5 mt-1 link')}
-                                            >
-                                                {item.title}
-                                            </NavLink>
-                                        </div>
+                                    <div key={item.title}>
+                                        <NavLink to={`/${item.to}`} className={({isActive}) => (isActive ? 'text-decoration-underline me-5 mt-1 link-active' : 'text-decoration-none me-5 mt-1 link')}>
+                                            {item.title}
+                                        </NavLink>
+                                    </div>
                                 ))}
                             </Nav>
                         </OffcanvasBody>
                     </NavbarOffcanvas>
-                    <div>
-                        <button type="button" style={styles.button} onClick={() => setShow(true)}>
-                            <FontAwesomeIcon icon={faSearch} />
-                        </button>
-
-                        <Modal
-                            show={show}
-                            onHide={() => setShow(false)}
-                            dialogClassName="modal-90w"
-                            aria-labelldby="search-bar-modal"
-                        >
-                            <ModalBody>
-                                <Form className="d-flex align-items-center justify-content-center ">
-                                    <FormControl 
-                                        type="search"
-                                        placeholder="search"
-                                        aria-label="search"
-                                        className="me-5"
-                                    />
-                                    <CloseButton onClick={() => setShow(false)}/>
-                                </Form>
-                            </ModalBody>
-                        </Modal>
-                    </div>
-                </Container>
-            </Navbar>
+                </Navbar>
+            </Container>
         </>
     )
 }
 
 export default NavBar
-// 08060686592 -mr fwanshak
