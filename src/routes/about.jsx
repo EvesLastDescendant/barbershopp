@@ -22,7 +22,9 @@ function About() {
             <div style={{border: '1px solid'}}>
                 <h3>Meet the Team</h3>
                 <div>
-                    
+                    <Image alt="image" src="/src/assets/IMG_4983.jpg" width={250} />
+                    <Image alt="image" src="/src/assets/IMG_4983.jpg" width={250} />
+                    <Image alt="image" src="/src/assets/IMG_4983.jpg" width={250} />
                 </div>
             </div>
         </>

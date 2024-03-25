@@ -3,24 +3,19 @@ import NavBar from "../components/navigationbar"
 import { fontsizes } from "../utils/fontsize"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import AnimPos from "../components/gsapanimpos"
 
 function Home() {
-
     const [isHover, setIsHover] =useState(false)
 
     return (
-        <>
+        <> 
             <div className="for-navbar">
                 <NavBar />
                 <Container fluid style={{display: 'grid', placeItems: 'center', height: '80vh'}}>
-                    <h1 
-                        style={{
-                            fontSize: `clamp(${fontsizes.lg} * 3.5, 8vw, ${fontsizes["3xl"]} * 2)`,
-                            fontWeight: 600,
-                            color: '#fff',
-                            textAlign: 'center',
-                            fontFamily: "'Cormorant', serif"
-                        }}>Clean.Crisp. <br/> Classy.</h1>
+                    <div>
+                        <AnimPos text={"Clean. Crisp. Classy."}/>
+                    </div>
                 </Container>
             </div>
             <Container>
@@ -47,7 +42,7 @@ function Home() {
                     </h1>
                     <p>Weekdays: Tuesday-Friday 900am-7:00pm</p>
                     <p className="mb-5">Weekends: Saturday 9:00am-1:00pm</p>
-                    <Link to={'/appointment'} style={{
+                    <Link to={'/bookings'} style={{
                         textDecoration: 'none',
                         borderRadius: 5,
                         letterSpacing: 2,

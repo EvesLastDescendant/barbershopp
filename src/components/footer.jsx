@@ -28,7 +28,7 @@ function Footer() {
                     <Container fluid>
                         <Row style={{fontSize: 12, fontWeight: 600}}>
                             <Col md={{span: 2, offset: 4}}>
-                                <Link to={'/about'} className="text-decoration-none">
+                                <Link to={'/our story'} className="text-decoration-none">
                                     OUR STORY
                                 </Link>
                             </Col>

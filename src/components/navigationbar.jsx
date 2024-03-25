@@ -15,7 +15,7 @@ function NavBar() {
         <>
             <Container fluid className="pt-4 px-3 ">
                 <Navbar expand="sm">
-                    <NavbarToggle aria-controls="offcanvas-expand" />
+                    <NavbarToggle aria-controls="offcanvas-expand" className=" text-bg-light "/>
                     <NavbarBrand href="#">
                         <h2 style={{color: '#fff',fontFamily: "'Cormorant', serif", fontSize: `clamp(${fontsizes.sm}, ${fontsizes["2xl"]}, ${fontsizes["xl"]} * 2)`}}>BRAND NAME</h2>
                     </NavbarBrand>
