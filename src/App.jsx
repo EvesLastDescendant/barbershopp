@@ -9,6 +9,7 @@ import Error from './error'
 import Home from "./routes/home";
 import Contact from "./routes/contact";
 import About from "./routes/about";
+import Bookings from "./routes/bookings";
 
 export const router = createBrowserRouter([
     {
@@ -18,7 +19,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />
+                element: <Home />,
             },
             {
                 path: "contact",
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path: "our story",
                 element: <About />
+            },
+            {
+                path: "bookings",
+                element: <Bookings />
             }
         ]
     }
