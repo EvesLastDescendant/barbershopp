@@ -6,7 +6,8 @@ import { useState } from "react"
 import AnimPos from "../components/gsapanimpos"
 
 function Home() {
-    const [isHover, setIsHover] =useState(false)
+    const [isHover, setIsHover] = useState(false)
+    
 
     return (
         <> 
@@ -15,10 +16,6 @@ function Home() {
                 <Container fluid style={{display: 'grid', placeItems: 'center', height: '80vh'}}>
                     <div>
                         <AnimPos text={"Clean. Crisp. Classy."}/>
-                        {/**
-                         * to-do
-                         * make AnimPos visible when cursor enters div and when cursor leaves make AnimPos invisible
-                         */}
                     </div>
                 </Container>
             </div>
