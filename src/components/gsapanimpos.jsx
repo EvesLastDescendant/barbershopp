@@ -1,9 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { fontsizes } from "../utils/fontsize";
 
 function AnimPos(props) {
+    const [mountAnim, setMountAnim] = useState(true)
     const xTo = useRef(null);
     const yTo = useRef(null);
     const app = useRef(null);
@@ -14,8 +15,8 @@ function AnimPos(props) {
     },{ scope: app } );
 
     const moveShape = contextSafe((e) => {
-    xTo.current(e.clientX);
-    yTo.current(e.clientY);
+        xTo.current(e.clientX);
+        yTo.current(e.clientY);
     });
 
     const style = {
@@ -27,8 +28,14 @@ function AnimPos(props) {
     }
 
     return (
-    <div className="app" ref={app} onMouseMove={(e) => moveShape(e)} >
-        <div className="flair"/>
+    <div 
+        className="app" 
+        ref={app} 
+        onMouseMove={(e) => moveShape(e)}
+        onMouseLeave={() => setMountAnim(false)}
+        onMouseEnter={() => setMountAnim(true)}
+    >
+        <div className="flair" style={{display: mountAnim ? "block" : "none"}}/>
         <h1 style={style}>{props.text}</h1>
     </div>
     );
