@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { fontsizes } from "../utils/fontsize";
@@ -9,14 +9,18 @@ function AnimPos(props) {
     const yTo = useRef(null);
     const app = useRef(null);
 
+    useEffect(() => {
+        setMountAnim(false)
+    }, [])
+
     const { contextSafe } =  useGSAP(() => {
     xTo.current = gsap.quickTo(".flair", "x", {duration: 0.8, ease: "power3"}),
     yTo.current = gsap.quickTo(".flair", "y", {duration: 0.8, ease: "power3"});
     },{ scope: app } );
 
     const moveShape = contextSafe((e) => {
-        xTo.current(e.clientX);
-        yTo.current(e.clientY);
+        xTo.current(e.clientX - 30);
+        yTo.current(e.clientY - 30);
     });
 
     const style = {
