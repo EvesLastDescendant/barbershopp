@@ -10,6 +10,10 @@ import Home from "./routes/home";
 import Contact from "./routes/contact";
 import About from "./routes/about";
 import Bookings from "./routes/bookings";
+import SignIn from "./routes/signIn";
+
+
+
 
 export const router = createBrowserRouter([
     {
@@ -32,7 +36,12 @@ export const router = createBrowserRouter([
             {
                 path: "bookings",
                 element: <Bookings />
+            },
+            {
+                path: "signin",
+                element: <SignIn/>
             }
+        
         ]
     }
 ])

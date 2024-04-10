@@ -30,6 +30,25 @@ function Home() {
             <Container>
                 <div style={{minHeight: 10, height: 150}}></div>
                 <Container className="text-center">
+
+   {/* // admin button// */}
+   <Link to ={"/SignIn"}>
+                    <button 
+                    style={{background:"black",
+                     padding:"1rem", borderRadius:"1rem",  fontSize: `clamp(${fontsizes.lg} * 3.5, 8vw, 
+                        ${fontsizes["1rem"]}  )`,
+                        borderRadius: 5,
+                        letterSpacing: 2,
+                        width: '20%',
+                        fontWeight: 200,
+                        color: '#fff',
+                        }}>
+                        
+                        ADMIN
+                    </button>
+                    </Link>
+                    {/* ///////////////////////// */}
+
                     <h1
                         style={{
                             fontSize: `clamp(${fontsizes.lg} * 3.5, 8vw, ${fontsizes["3xl"]} * 2)`,
